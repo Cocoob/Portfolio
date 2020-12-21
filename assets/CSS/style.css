@@ -3,9 +3,12 @@
     src: url("../fonts/Bodoni\ 72.ttc");
 }
 
+
+
 body {
     margin: 0 auto;
     padding: 0 auto;
+    font-family: "Bodoni";
 }
 
 .no-padding {
@@ -13,18 +16,22 @@ body {
     margin: 0 !important;
  }
 
+ /* Page d'accueil */
 #landing-page {
-    background-image: url("../image/bg.jpg");
+    background-image: url("../image/bg1.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
 }
 
-#landing-page-title {
+#parallax-title {
     height: 90vh;
     justify-content: center;
     align-items: center;
 }
+
+/* Barre de navigation */
 .navbar {
     height: 10vh;
 }
@@ -32,10 +39,130 @@ body {
 .navbar-nav {
     width: 100%;
 }
+
+/* Titre principal */
 .title {
     font-size: 10em;
-    font-family: "Bodoni";
 }
+
+/* À propos de moi */
+
+#aboutme {
+    height: auto;
+    background-color: black;
+    padding-bottom: 5%;
+
+}
+
+
+.aboutme-title {
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+}
+
+.aboutme-title::before {
+    content : "";
+    width: 50%;
+    height: 1px;
+    background-color: white;
+
+    position: absolute;
+    bottom: -20%;
+    left: 25%;
+
+}
+
+.moi {
+    width: 75%;
+}
+
+#aboutme-content p {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:5% 20%;
+
+    font-size: 1.5em;
+}
+
+#competence {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+#competence i {
+
+}
+
+.html, .css, .js {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.html i {
+    color: orange;
+}
+
+.css i {
+    color: blue;
+}
+
+.js i {
+    color: yellow;
+}
+
+/* Réseaux sociaux */
+
+.social-link {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.github {
+    background-color: #454658;
+    border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 5px 30px;
+    margin-right: 10%;
+}
+
+.linkedin {
+    background-color: #6578c0;
+    border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 5px 30px;
+}
+
+/* Parallax 2 */
+
+#parallax2 {
+    background-image: url("../image/bg2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+
+@media only screen and (max-width : 1000px) {
+
+    .moi {
+        width: 30%;
+    }
+
+    #img-moi {
+        text-align: center;
+    }
+
+}
+
 
 @media only screen and (max-width : 900px) {
 
@@ -56,6 +183,16 @@ body {
 
     .title {
         font-size: 4em;
+    }
+
+    .social-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .github {
+        margin-right: 0;
+        margin-bottom: 2%;
     }
 
 }

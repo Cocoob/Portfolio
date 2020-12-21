@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c87a70838.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Mon Portfolio</title>
@@ -24,7 +25,7 @@
                    </li>
                    <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Mes projets en formation
+                      Mes projets
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">HTML</a>
@@ -34,10 +35,12 @@
                       <a class="dropdown-item" href="#">Javascript</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">PHP</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Projets perso</a>
                     </div>
                   </li>
                    <li class="nav-item">
-                    <a class="nav-link text-light" href="#Histoire">Mes projets persos</a>
+                    <a class="nav-link text-light" href="#Histoire">À propos de moi</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-light" href="#Contact">Contact</a>
@@ -47,9 +50,41 @@
             </nav>
         </div>
         <!-- Title -->
-        <div class="no-padding row" id="landing-page-title">
+        <div class="no-padding row" id="parallax-title">
             <h1 class="title text-light">Mon Portfolio</h1>
         </div>
+    </div>
+
+    <!-- À propos de moi -->
+    <div class="container-fluid" id="aboutme">
+      <div class="row" id="aboutme-content">
+        <div class="col-12 col-lg-8 mt-5">
+          <h1 class="aboutme-title text-light">À propos de moi</h1>
+          <p class="text-light">Je m'appelle Corentin BOUSQUET, je suis actuellement en formation de développeur web / web mobile chez Simplon.co à Narbonne.</p>
+          <p class="text-light">Actuellement, j'apprend le :</p>
+          <ul class="text-light" id="competence">
+            <li class="html"><i class="fab fa-html5 fa-3x"></i>HTML</li>
+            <li class="css"><i class="fab fa-css3-alt fa-3x"></i>CSS</li>
+            <li class="js"><i class="fab fa-js-square fa-3x"></i>Javascript</li>
+          </ul>
+          <p class="text-light">Vous pouvez me retrouver sur : </p>
+          <div class="social-link">
+            <a href="https://github.com/Cocoob" class="github text-light"> <i class="fab fa-github"></i> Github</a>
+            <a href="https://fr.linkedin.com" class="linkedin text-light"> <i class="fab fa-linkedin"></i> Linkedin</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mt-5" id="img-moi">
+          <img src="assets/image/IMG_4126.PNG" class="moi" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Parallax -->
+
+    <div class="container-fluid" id="parallax2">
+      <div class="no-padding row" id="parallax-title">
+        <h1 class="title text-light">Mes projets</h1>
+    </div>
     </div>
 
   
