@@ -49,7 +49,7 @@ body {
 
 #aboutme {
     height: auto;
-    background-color: black;
+    background-color: #040A10;
     padding-bottom: 5%;
 
 }
@@ -108,7 +108,7 @@ body {
 }
 
 .css i {
-    color: blue;
+    color: #49C0F5;
 }
 
 .js i {
@@ -147,8 +147,43 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
-    
+    height: 100vh;   
+}
+
+#project {
+    background-color: #040A10;
+    height: auto;
+}
+
+/* Projets */
+
+#project-button {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+#project-button button {
+    border: none;
+    margin-right: 2%;
+    width: 100px;
+}
+
+#project-button #html {
+    background: #FFAF48;
+}
+
+#project-button #css {
+    background: #49C0F5;
+}
+
+#project-button #js {
+    background: #FEEE1C;
+}
+
+.card {
+    height: 35vh;
 }
 
 @media only screen and (max-width : 1000px) {
