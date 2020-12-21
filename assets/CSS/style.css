@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Bodoni";
+    src: url("../fonts/Bodoni\ 72.ttc");
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+#landing-page {
+    background-image: url("../image/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#landing-page-title {
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    height: 10vh;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+.title {
+    font-size: 10em;
+    font-family: "Bodoni";
+}
+
+@media only screen and (max-width : 900px) {
+
+    .title {
+        font-size: 8em;
+    }
+
+}
+
+@media only screen and (max-width : 700px) {
+
+    .title {
+        font-size: 6em;
+    }
+
+}
+@media only screen and (max-width : 550px) {
+
+    .title {
+        font-size: 4em;
+    }
+
+}
+
+@media only screen and (max-width : 350px) {
+
+    .title {
+        font-size: 3em;
+    }
+
+}
