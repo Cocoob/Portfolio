@@ -3,6 +3,11 @@
     src: url("../fonts/Bodoni\ 72.ttc");
 }
 
+@font-face {
+    font-family: "Garamond";
+    src: url("../fonts/garamond-bold.ttf");
+}
+
 
 
 body {
@@ -30,6 +35,14 @@ body {
     height: 90vh;
     justify-content: center;
     align-items: center;
+}
+
+#parallax-title h1 {
+    transition: transform 1s ease;
+}
+
+#parallax-title h1:hover {
+    transform: scale(0.8);
 }
 
 /* Barre de navigation */
@@ -88,7 +101,7 @@ body {
 
 .moi {
     width: 75%;
-    transition: transform 1s ease;
+    transition: transform 2s ease;
 }
 
 .image-hover-container:hover img {
@@ -102,6 +115,8 @@ body {
     padding:5% 20%;
 
     font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
 }
 
 #competence {
@@ -111,8 +126,13 @@ body {
     font-size: 1.5em;
 }
 
-#competence i {
+#competence li {
+    width: 12%;
+    padding: 1% 0;
 
+    -webkit-box-shadow: 0px 0px 15px 5px #4A4A4A; 
+    box-shadow: 0px 0px 15px 5px #4A4A4A;
+    border-radius: 3px;
 }
 
 .html, .css, .js {
@@ -202,6 +222,7 @@ body {
 
 #project-button #html {
     background: #FFAF48;
+    background: linear-gradient(to right, #FFAF48 0%,#FFAF48 50%, #49C0F5 100%);
     border-radius: 3px;
 }
 
@@ -213,16 +234,19 @@ body {
 
 #project-button #css {
     background: #49C0F5;
+    background: linear-gradient(to right, #49C0F5 0%,#49C0F5 50%, #FEEE1C 100%);
     border-radius: 3px;
 }
 
 #project-button #js {
     background: #FEEE1C;
+    background: linear-gradient(to right, #FEEE1C 0%, #FEEE1C 50%, #B8B8B8 100%);
     border-radius: 3px;
 }
 
 #project-button #all {
     border-radius: 3px;
+    background: linear-gradient(to right,#B8B8B8 0%,#B8B8B8 50%,#FFAF48 100%);
 }
 
 .card {
@@ -241,6 +265,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    font-family: "Garamond";
 }
 
 /* Projet perso */
