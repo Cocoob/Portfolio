@@ -44,6 +44,10 @@ body {
     font-weight: bold;
 }
 
+.navbar-nav li:hover {
+    border: solid white;
+}
+
 /* Titre principal */
 .title {
     font-size: 10em;
@@ -77,8 +81,18 @@ body {
 
 }
 
+.image-hover-container {
+    height: 100%;
+    overflow: hidden;
+}
+
 .moi {
     width: 75%;
+    transition: transform 1s ease;
+}
+
+.image-hover-container:hover img {
+    transform: scale(1.3);
 }
 
 #aboutme-content p {
