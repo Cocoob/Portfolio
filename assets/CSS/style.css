@@ -229,13 +229,14 @@ body {
     text-align: center;
 }
 
+/* Projet perso */
+
 #perso {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    width: 100%;
     color: white;
 }
 
@@ -247,6 +248,10 @@ body {
 
 #git i {
     color: white;
+}
+
+#git {
+    margin: 0;
 }
 
 /* Parallax 3 */
@@ -342,6 +347,15 @@ body {
     }
 
 }
+
+@media only screen and (max-width : 635px) {
+
+    .card-perso {
+        display: block;
+    }
+
+}
+
 @media only screen and (max-width : 550px) {
 
     .title {
