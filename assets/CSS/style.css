@@ -280,7 +280,7 @@ body {
     height: 100%;
 }
 
-.mail, .tel {
+.mail, .tel, .pdf {
     width: 100%;
     text-align: center;
 }
@@ -294,6 +294,7 @@ body {
     justify-content: center;
 
     width: 100%;
+    padding: 0;
     list-style: none;
 }
 
@@ -315,6 +316,15 @@ body {
 .footer-sociallink li:hover {
     background-color: white;
     color:  #040A10 ;
+}
+
+.pdf {
+    width: 100%;
+    color: white;
+}
+
+.pdf i {
+    margin-right: 1%;
 }
 
 /* Responsive */
