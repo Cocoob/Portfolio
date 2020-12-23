@@ -61,7 +61,7 @@ allButton.addEventListener('click', function() {
 
 jQuery(function($){
 
-    var launch = new Date(2021,09,27);
+    var launch = new Date(2021,10,01);
     var days = $('#days');
     var hours = $('#hours');
     var minutes = $('#minutes');
