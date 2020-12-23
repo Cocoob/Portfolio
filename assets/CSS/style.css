@@ -147,14 +147,21 @@ body {
 
 .html i {
     color: #FFAF48;
+    transition: transform 0.5s ease;
 }
 
 .css i {
     color: #49C0F5;
+    transition: transform 0.5s ease;
 }
 
 .js i {
     color: #FEEE1C;
+    transition: transform 0.5s ease;
+}
+
+.html i:hover, .css i:hover, .js i:hover{
+    transform: scale(1.1);
 }
 
 .card {
