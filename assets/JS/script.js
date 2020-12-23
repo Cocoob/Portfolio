@@ -57,4 +57,39 @@ allButton.addEventListener('click', function() {
     card7.style.display = "block"
 })
 
+// Compte à rebours 
+
+jQuery(function($){
+
+    var launch = new Date(2021,09,27);
+    var days = $('#days');
+    var hours = $('#hours');
+    var minutes = $('#minutes');
+    var seconds = $('#seconds');
+
+
+setDate();
+function setDate() {
+    var now = new Date();
+    var s =((launch.getTime()-now.getTime())/1000);
+    var d = Math.floor(s/86400);
+    days.html(d+' jour'+(d>1?'s':''));
+    s -= d*86400;
+    
+    var h = Math.floor(s/3600);
+    hours.html(h+' heure'+(h>1?'s':''));
+    s -= h*3600;
+
+    var m = Math.floor(s/60);
+    minutes.html(m+' minute'+(m>1?'s':''));
+    s -= m*60;
+
+    s = Math.floor(s);
+    seconds.html(s+" seconde" + (s>1?'s':''));
+
+    setTimeout(setDate,1000);
+}
+
+});
+
 
