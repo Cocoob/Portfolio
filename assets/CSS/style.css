@@ -8,7 +8,9 @@
     src: url("../fonts/garamond-bold.ttf");
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0 auto;
@@ -142,7 +144,7 @@ body {
 }
 
 .html i {
-    color: orange;
+    color: #FFAF48;
 }
 
 .css i {
@@ -150,7 +152,7 @@ body {
 }
 
 .js i {
-    color: yellow;
+    color: #FEEE1C;
 }
 
 .card {
